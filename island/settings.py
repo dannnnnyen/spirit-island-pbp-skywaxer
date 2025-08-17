@@ -29,7 +29,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY') or 'django-insecure-$1nkg1t+jd(&$u1-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', '') == 'yes'
 
-ALLOWED_HOSTS = ['localhost', 'si.bitcrafter.net']
+ALLOWED_HOSTS = ['localhost', 'si.bitcrafter.net', '10.128.0.2']
 
 if 'EXTRA_ALLOWED_HOSTS' in os.environ:
     ALLOWED_HOSTS.extend(os.environ['EXTRA_ALLOWED_HOSTS'].split(','))
